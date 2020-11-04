@@ -4,12 +4,16 @@ wyzeback is a way to unbrick your Wyze Sense sensors. This is a hack. The script
 
 ## Tools / software needed
 Uniflash - https://www.ti.com/tool/UNIFLASH
+
 CC1310 Launch pad - https://www.ti.com/tool/LAUNCHXL-CC1310
 
 ## Pinout
 C - TCK
+
 M - TMS
+
 GND - GND
+
 +3.3V - +3.3V
 
 ![Door Sensor](wyzesense_door.png)
