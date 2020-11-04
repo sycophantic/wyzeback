@@ -19,11 +19,12 @@ GND - GND
 ![Door Sensor](wyzesense_door.png)
 
 ## Steps
-- Patch firmware with wyzeback_door.py <new mac>
+- Patch firmware with `wyzeback_door.py <new mac>`
+-- or `bbe -e 's/AABBCCDD/DDCCBBAA/' wyzesense_door_AABBCCDD.bin > patched.bin`
 - Hookup the CC1310 Launchpad as noted in the pinout, it is possible to hold the C and M pins by hand
 - Flash with Uniflash (pick CC1310F128)
 - If it won't flash, erase the flash and try again
 
 ## Notes  
 - This only works for the door sensor for now. The same probably can be done with the motion sensor.
-- The MAC must match the programmed mac, it seems there firmware checks this against the MAC burned in CCFG.
+- The MAC must match the programmed MAC, it seems there firmware checks this against the MAC burned in CCFG.
